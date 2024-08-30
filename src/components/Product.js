@@ -12,7 +12,7 @@ const Product = ( { name, id, imgURL, price } ) => {
     }))
   }
   return (
-    <div className="card">
+    <div className="card scale-in-left">
       <img src={imgURL} alt={name} />
       <h2>{name}</h2>
       <p>$ {price}</p>

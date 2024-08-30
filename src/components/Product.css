@@ -1,5 +1,6 @@
 *:root {
   --bgcolor: rgba(46, 92, 241, 0.744);
+  --border-radius: 25px 5px;
 }
 
 .products-container {
@@ -20,6 +21,16 @@ button {
   border: none;
   cursor: pointer;
   background-color: var(--bgcolor);
+  border-radius: var(--border-radius);
+
+  &:hover {
+    --shadow: 10px 10px 8px 0px rgba(0, 0, 0, 0.51);
+    background-color: orangered;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+    box-shadow: var(--shadow);
+    -webkit-box-shadow: var(--shadow);
+    -moz-box-shadow: var(--shadow);
+  }
 }
 
 .card {
@@ -37,6 +48,7 @@ button {
 .card img {
   width: 90%;
   height: 40%;
+  border-radius: var(--border-radius);
 }
 
 .card>p {
@@ -53,6 +65,7 @@ button {
   background: orangered;
   border: none;
   cursor: pointer;
+  border-radius: var(--border-radius);
 }
 
 .orderBtn:hover {

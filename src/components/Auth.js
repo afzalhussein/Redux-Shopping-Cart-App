@@ -12,7 +12,7 @@ const Auth = () => {
     dispatch(authActions.login({}))
    }
   return (
-    <div className="container">
+    <div className="container scale-in-left">
       <h1>Login</h1>{" "}
       <form onSubmit={handleSubmit}>
         <LabeledInput id="id" name="id" label="Id" type="text" ></LabeledInput>
