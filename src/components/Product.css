@@ -43,6 +43,18 @@ button {
   justify-content: center;
   box-shadow: 5px 5px 10px #ccc;
   border-radius: 25px 5px;
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: hsl(60, 21%, 95%);
+    z-index: -1;
+    border-radius: 25px 5px;
+  }
 }
 
 .card img {
